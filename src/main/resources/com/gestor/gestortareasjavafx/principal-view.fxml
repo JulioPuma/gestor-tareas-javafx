@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+
+<VBox spacing="10" alignment="CENTER" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.gestor.gestortareasjavafx.controller.TareaController">
+  <TableView fx:id="tablaTareas">
+    <columns>
+      <TableColumn text="Título" fx:id="colTitulo" />
+      <TableColumn text="Descripción" fx:id="colDescripcion" />
+      <TableColumn text="Completada" fx:id="colCompletada" />
+    </columns>
+  </TableView>
+  <TextField fx:id="txtTitulo" promptText="Título" />
+  <TextArea fx:id="txtDescripcion" promptText="Descripción" />
+  <Button text="Agregar Tarea" fx:id="btnAgregar" onAction="#agregarTarea" />
+</VBox>
